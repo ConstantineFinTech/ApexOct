@@ -28,7 +28,7 @@ prompt APPLICATION 100 - Sales
 -- Application Export:
 --   Application:     100
 --   Name:            Sales
---   Date and Time:   16:13 Thursday October 13, 2022
+--   Date and Time:   16:25 Thursday October 13, 2022
 --   Exported By:     MYAPP
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -111,7 +111,7 @@ wwv_flow_imp.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'Sales'
 ,p_last_updated_by=>'WS_ADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20221013161045'
+,p_last_upd_yyyymmddhh24miss=>'20221013162428'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>4
 ,p_ui_type_name => null
@@ -13965,17 +13965,17 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'13'
 ,p_last_updated_by=>'WS_ADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20221013161045'
+,p_last_upd_yyyymmddhh24miss=>'20221013162428'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(7946745475822628)
-,p_plug_name=>'Sales'
+,p_plug_name=>'Sales 00001'
 ,p_region_template_options=>'#DEFAULT#'
-,p_escape_on_http_output=>'Y'
 ,p_plug_template=>wwv_flow_imp.id(7848787935821963)
 ,p_plug_display_sequence=>10
 ,p_plug_display_point=>'REGION_POSITION_01'
 ,p_plug_query_num_rows=>15
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_region_image=>'#APP_FILES#icons/app-icon-512.png'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'

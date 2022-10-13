@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+	<changeSet id="f22746354379ff8b9fc5fb743698f68c6a57788a" author="(MYAPP)-Generated"     >
+		<n0:createSxmlObject objectName="EMP_SEQ" objectType="SEQUENCE" ownerName="MYAPP"   >
+			<n0:source><![CDATA[
+  <SEQUENCE xmlns="http://xmlns.oracle.com/ku" version="1.0">
+   <SCHEMA>MYAPP</SCHEMA>
+   <NAME>EMP_SEQ</NAME>
+   <START_WITH>8000</START_WITH>
+   <INCREMENT>10</INCREMENT>
+   <MINVALUE>1</MINVALUE>
+   <MAXVALUE>90000</MAXVALUE>
+   <CACHE>0</CACHE>
+   <SCALE>NOSCALE</SCALE>
+</SEQUENCE>]]></n0:source>
+		</n0:createSxmlObject>
+	</changeSet>
+</databaseChangeLog>
